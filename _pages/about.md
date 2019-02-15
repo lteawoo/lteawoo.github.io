@@ -11,27 +11,29 @@ toc: false
 이 블로그는 업무 또는 개인 프로젝트하며 필요한 정보 또는 공유하고 싶은 경험을 기록 하거나<br />
 공부 과정에 있어 정리하는 부분이 필요 할 것 같아 만들게 되었습니다.
 
-## Profile
-Skill
-:    Program Language : Java, Javascript
-:    Database : Oracle, MySQL, MsSQL
+<h2>Profile</h2>
+<h3>Skills</h3>
+<p>Program Language : Java, Javascript</p>
+<p>Database : Oracle, MySQL</p>
 
-Studying
-:    Program Language : Go, C
-:    ETC : Data Structure, Algorithm
+<h3>Learning and Interests List</h3>
+<p>Program Language : Go, C</p>
+<p>ETC : Data Structure, Algorithm, Parallel Programming, Design Pattern</p>
 
-Project
+<h3>Project</h3>
 <table>
 	<tr>
-		<td>2018.10 ~ 2018.10</td>
-		<td>동부생명 AML 솔루션 커스터마이징 및 유지보수<br />
-			ICB AML 솔루션 커스터마이징 및 유지보수
-		</td>
+		<td>2019.02 ~ 2019.02</td>
+		<td>The-K 손해보험 AML솔루션</td>
+	</tr>
+	<tr>
+		<td>2018.11 ~ 2019.02</td>
+		<td>동양생명 AML 솔루션</td>
 	</tr>
 	<tr>
 		<td>2018.10 ~ 2018.10</td>
-		<td>동부생명 AML 솔루션 커스터마이징 및 유지보수<br />
-			ICB AML 솔루션 커스터마이징 및 유지보수
+		<td>동부생명 AML 솔루션<br />
+			ICB AML 솔루션
 		</td>
 	</tr>
 	<tr>
