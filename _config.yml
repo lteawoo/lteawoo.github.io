@@ -1,36 +1,145 @@
-#Update all the sections by editing the data.yml file inside _data folder.
+# Site
+repository: lteawoo/lteawoo.github.io
+favicon: images/favicon.ico
 
-# Site Settings
-title: My Resume
-url: 'http://webjeda.com'
+# Content configuration version
+version: 2
 
-#change it according to your repository name
-# disabling since we are using a custom domain
-#baseurl: '/online-cv' 
+# Personal info
+name: 이태우
+title: Java & Spring 웹개발자
+email: lteawoo@gmail.com
+website: https://lteawoo.tistory.com
 
-description: A beautiful Jekyll theme for creating resume
-# Style will be applied only after restarting the build or serve. Just choose one of the options.
-theme_skin: blue # blue turquoise green berry orange ceramic
-chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
+# Dark Mode (true/false/never)
+darkmode: false
 
-# Tracker
-analytics: UA-83979019-1
+# Social links
+# twitter_username: facespics
+github_username:  lteawoo
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+# linkedin_username: jameswgrant
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
 
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+# Additional icon links
+additional_links:
+- title: 로아도구
+  icon: fas fa-globe
+  url: https://loatool.taeu.kr
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+about_title: 소개
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  안녕하세요, 저는 Java와 Spring 그리고 Vue.js를 주로 사용하는 6년차 웹개발자입니다.
+  **3000여개 매장의 주문&배달중계 POS 영업관리**, **10여개 금융업권 컴플라이언스 솔루션** 등의 서비스 및 솔루션에서 API 및 웹사이트 개발을 해왔으며
+
+  개인 서비스로 **MAU 3.5만 이상의 게임 서드파티 웹서비스**, **제지/코팅 공장의 작업지시 솔루션**을 AWS 인프라 환경에서 서비스 하고 있습니다.
+
+  현재 POS 영업관리 웹서비스 개발자로서 WEB/POS API, 공통모듈, 메인사이트 및 영업관리 사이트 개발을 담당하고 있습니다.
+
+  저는 고객의 니즈, 동료의 니즈를 구체화하는게 즐겁습니다. 사내에서는 <mark>장애공지 챗봇</mark>서비스를 운영하여 **장애전파 속도가 10배이상** 빨라졌고,
+  지인의 부탁으로 진행하였던 <mark>공장 내 작업지시서 전산화</mark>는 **월 300만원 이상의 인건비 절감**을 하기도 했습니다.
+
+  또한 팀 내의 개발 품질 향상을 위해 Gitlab MR을 이용한 버전관리 프로세스를 도입하였습니다.
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Super awesome project
+        link: github.com/sproogen
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+
+  - title: 경력 # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: 푸드테크
+        link: https://foodtechkorea.com
+        # link_text: boringcompany.com
+        sub_title: Java & Spring & Vue.js 웹개발자
+        caption: 2020.10 ~ 현재
+        quote: >
+          매장 수 34,000개의 주문&배달 중계 POS 서비스
+        description: | # this will include new lines to allow paragraphs
+          - 레거시 영업관리 B2B 서비스로 개편 - Jpa & QueryDSL 도입
+          - 장애공지 챗봇 서비스 도입 - Line & Slack Api
+          - Spring 및 Vue.js 환경에서의 개발 경험
+      - layout: left
+        title: 옥타솔루션
+        link: http://www.octasolution.co.kr
+        # link_text: boringcompany.com
+        sub_title: Java & Spring 웹개발자
+        caption: 2020.10 ~ 현재
+        quote: >
+          10여개 금융업권, 100여개 고객사의 금융 컴플라이언스 서비스
+        description: | # this will include new lines to allow paragraphs
+          - 부정청탁방지 솔루션, 자금세탁방지 솔루션 개발
+          - KoFIU 수기생성 지표 자동화 및 보고자료 자동화
+          - 사내 Flex 그리드 라이브러리 HTML5 전환 담당 - ToastUI Grid & webpack & babel
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Harvard University
+        caption: 2010 - 2013
+        sub_title: BSc Computer Science
+        quote: >
+          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+
+          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+      - Rock climbing
+      - Gaming
+      - Knitting
+      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+
+      Look at this cool image  
+      ![Trees](/images/landscape-trees.jpg "Trees")
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
 
 # Build settings
-compress-site: yes
+remote_theme: sproogen/resume-theme
 
-encoding: "utf-8"
-compress_html: # - http://jch.penibelst.de/
-  clippings: all
-  ignore:
-    envs: development
+sass:
+  sass_dir: _sass
+  style: compressed
 
-# Development Settings
-port: 4000
-host: 0.0.0.0
-safe: false
+plugins:
+ - jekyll-seo-tag
